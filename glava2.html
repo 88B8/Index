@@ -1,0 +1,121 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Наш автопарк - Автошкола</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html">Автошкола Drive</a>
+            <img src="img/logo.jpg" width="60" height="60" alt="Логотип">
+			Наша миссия - научить вождению
+        </div>
+    </header>
+
+    <div class="dropdown">
+        <button class="dropbtn">☰ Меню</button>
+        <div class="dropdown-content">
+            <a href="glava1.html">О компании</a>
+            <a href="glava2.html">Автопарк</a>
+            <a href="glava3.html">Тарифы</a>
+            <a href="glava4.html">Обратная связь</a>
+        </div>
+    </div>
+    
+	<main class = "main-content">
+		<h1 align="center">Наш автопарк</h1>
+		
+		<div class = "info-block">
+			<h2 align="center">Мы предлагаем обучение на современных и проверенных автомобилях</h2>
+		</div>
+    </main>
+	
+        <div class="car-slider">
+        <div class="car-slides">
+            <div class="car-slide">
+                <img src="img/2107.png" alt="ВАЗ 2107">
+                <h3>ВАЗ 2107</h3>
+                <p>Идеален для начинающих</p>
+            </div>
+            <div class="car-slide">
+                <img src="img/granta.jpg" alt="Lada Granta">
+                <h3>Lada Granta</h3>
+                <p>Современная механика и автомат</p>
+            </div>
+            <div class="car-slide">
+                <img src="img/kalina.jpg" alt="Lada Kalina">
+                <h3>Lada Kalina</h3>
+                <p>Комфортное обучение</p>
+            </div>
+            <div class="car-slide">
+                <img src="img/lambo.png" alt="Lamborghini Huracan">
+                <h3>Lamborghini Huracan</h3>
+                <p>Для продвинутых курсов</p>
+            </div>
+        </div>
+        
+        <div class="slider-arrow prev">&#10094;</div>
+        <div class="slider-arrow next">&#10095;</div>
+    </div>
+    
+    <center>
+        <table bgcolor="#F0F0F0" border="0" cellpadding="15" width="80%">
+            <tr>
+                <td align="center">
+                    <font size="4">
+                    <b>Хотите попробовать?</b><br>
+                    Запишитесь на пробное занятие в разделе <a href="glava4.html">Обратная связь</a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </center>
+    
+	<div class="contacts">
+		<h2>Как нас найти?</h2>
+		<p><strong>Адрес:</strong> г. Санкт-Петербург, ул. Оптиков 22, д.7</p>
+		<p><strong>Телефон:</strong> +7 (999) 228-14-88</p>
+		<p><strong>Режим работы:</strong> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</p>
+		<p><strong>Мы соц. сетях:</strong> <a href = "http://vk.com/drive">ВКонтакте</a></p>
+		<img src="img/map.png" class = "main-image">
+	</div>
+		
+    <marquee direction="right" bgcolor="#900000">
+        <font color="white" size="4">
+        г. Санкт-Петербург, ул. Оптиков 22, д.7. Контактный номер телефона: +79992281488
+        </font>
+    </marquee>
+	
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelector('.car-slides');
+            const prevBtn = document.querySelector('.prev');
+            const nextBtn = document.querySelector('.next');
+            let currentIndex = 0;
+            const slideCount = document.querySelectorAll('.car-slide').length;
+            
+            function updateSlider() {
+                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+            
+            function goToSlide(index) {
+                currentIndex = (index + slideCount) % slideCount;
+                updateSlider();
+            }
+            
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+            
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+            
+            nextBtn.addEventListener('click', nextSlide);
+            prevBtn.addEventListener('click', prevSlide);
+        });
+    </script>
+</body>
+</html>

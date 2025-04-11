@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Обратная связь - Автошкола Drive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html">Автошкола Drive</a>
+            <img src="img/logo.jpg" width="60" height="60" alt="Логотип">
+			Наша миссия - научить вождению
+        </div>
+    </header>
+
+    <div class="dropdown">
+        <button class="dropbtn">☰ Меню</button>
+        <div class="dropdown-content">
+            <a href="glava1.html">О компании</a>
+            <a href="glava2.html">Автопарк</a>
+            <a href="glava3.html">Тарифы</a>
+            <a href="glava4.html">Обратная связь</a>
+        </div>
+    </div>
+    
+	<main class = "main-content">
+		<h1 align="center">Форма обратной связи</h1>
+		
+		<div class = "info-block">
+			<h2 align="center">Заполните заявку и мы рассмотрим ее как можно быстрее!</h2>
+		</div>
+    </main>
+    
+    <form action="#" method="post">
+    <table border="0" align="center" cellpadding="10" width="60%">
+    
+    <tr bgcolor="#F0F0F0">
+        <td width="40%" align="right"><b>Ваше имя:</b></td>
+        <td><input type="text" name="FIO" size="30" placeholder="Иванов Иван"></td>
+    </tr>
+    
+    <tr>
+        <td align="right"><b>Номер телефона:</b></td>
+        <td><input type="text" name="PHONE" size="30" placeholder="+7 (999) 123-45-67"></td>
+    </tr>
+    
+    <tr bgcolor="#F0F0F0">
+        <td align="right"><b>Выбранный тариф:</b></td>
+        <td>
+            <select name="GROUP" style="width: 100%">
+                <option value="">-- Выберите тариф --</option>
+                <option>Стандарт (59 000 ₽)</option>
+                <option>Акция (50 000 ₽)</option>
+                <option>Стандарт+ (65 000 ₽)</option>
+            </select>
+        </td>
+    </tr>
+    
+    <tr>
+        <td align="right"><b>Вам есть 17 лет?</b></td>
+        <td>
+			<input type = "radio" name = "new"> Да &nbsp;
+			<input type = "radio" name = "new"> Нет <br>
+        </td>
+    </tr>
+    
+    <tr bgcolor="#F0F0F0">
+        <td align="right" valign="top"><b>Посещенные страницы:</b></td>
+        <td>
+			<input type = "checkbox" name = "new"> О компании <br>
+			<input type = "checkbox" name = "new"> Автопарк <br>
+			<input type = "checkbox" name = "new"> Тарифы <br>
+        </td>
+    </tr>
+    
+    <tr>
+        <td align="right"><b>Автомобиль для обучения:</b></td>
+        <td>
+            <select name="choice" style="width: 100%">
+                <option value="">-- Выберите автомобиль --</option>
+                <option>ВАЗ 2107</option>
+                <option>Lada Granta</option>
+                <option>Lada Kalina</option>
+                <option>Lamborghini Huracan</option>
+                <option>Свой автомобиль</option>
+            </select>
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2" align="center">
+            <br>
+				<input type="submit" value="Отправить заявку">
+            <br><br>
+        </td>
+    </tr>
+    
+    </table>
+    </form>
+    
+	<div class="contacts">
+		<h2>Как нас найти?</h2>
+		<p><strong>Адрес:</strong> г. Санкт-Петербург, ул. Оптиков 22, д.7</p>
+		<p><strong>Телефон:</strong> +7 (999) 228-14-88</p>
+		<p><strong>Режим работы:</strong> Пн-Пт: 9:00-21:00, Сб-Вс: 10:00-18:00</p>
+		<p><strong>Мы соц. сетях:</strong> <a href = "http://vk.com/drive">ВКонтакте</a></p>
+		<img src="img/map.png" class = "main-image">
+	</div>
+    
+    <marquee direction="right" bgcolor="#900000">
+        <font color="white" size="4">
+        г. Санкт-Петербург, ул. Оптиков 22, д.7. Контактный номер телефона: +7 (999) 228-14-88
+        </font>
+    </marquee>
+</body>
+</html>
